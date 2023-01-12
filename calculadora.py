@@ -1,3 +1,8 @@
+import numpy as np
+import os
+from time import sleep
+import math
+os.system("cls")  # limpia la consola
 def Calculadora():
     """Funcion Para Calcular Operaciones Aritmeticas"""
     while True:
