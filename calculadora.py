@@ -3,6 +3,7 @@ import os
 from time import sleep
 import math
 
+
 def Suma():
     x = int(input("Ingrese el primer numero a sumar\n"))
     y = int(input("Ingrese el segundo numero a sumar\n"))
@@ -12,17 +13,19 @@ def Suma():
     myorder = "La Suma de {0} + {1} es: {2}"
     print(myorder.format(x, y, respuesta))
     sleep(3)
-    print ("""
+    print("""
     
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Suma()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
+
+
 def Resta():
     x = int(input("Ingrese el primer numero\n"))
     y = int(input("Ingrese el segundo numero\n"))
@@ -32,15 +35,15 @@ def Resta():
     myorder = "La resta de {0} - {1} es: {2}"
     print(myorder.format(x, y, respuesta))
     sleep(3)
-    print ("""
+    print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Resta()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
 
 
@@ -53,15 +56,15 @@ def Multiplicacion():
     myorder = "La Multiplicacion de {0} * {1} es: {2}"
     print(myorder.format(x, y, respuesta))
     sleep(3)
-    print ("""
+    print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Multiplicacion()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
 
 
@@ -71,29 +74,30 @@ def Division():
     try:
         myorder = "La División de {0} / {1} es: {2}"
         print(myorder.format(x, y, x/y))
-        print ("""
+        print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
         """)
         opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-        if (opci=="si"):
+        if (opci == "si"):
             Division()
-        elif(opci=="no" or opci!="si"):
+        elif (opci == "no" or opci != "si"):
             repeat()
     except ZeroDivisionError:
         print("No se Permite la Division Entre 0")
         sleep(3)
-        print ("""
+        print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
         """)
         opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-        if (opci=="si"):
+        if (opci == "si"):
             Division()
-        elif(opci=="no" or opci!="si"):
+        elif (opci == "no" or opci != "si"):
             repeat()
+
 
 def Raiz():
     x = int(input("Ingrese Numero al que desea calular su raiz\n"))
@@ -102,15 +106,15 @@ def Raiz():
     result = pow(x, 1/y)
     print(myorder.format(x, y, result))
     sleep(3)
-    print ("""
+    print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Raiz()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
 
 
@@ -123,15 +127,15 @@ def Exponente():
     myorder = "{0} a la {1}.ª es: {2}"
     print(myorder.format(x, y, respuesta))
     sleep(3)
-    print ("""
+    print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Exponente()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
 
 
@@ -139,21 +143,20 @@ def Sen():
     x = int(input("Ingrese Numero\n"))
     respuesta = math.sin(x)
     myorder = "El seno de {0} es: {1}"
-    print(myorder.format(x,respuesta))
+    print(myorder.format(x, respuesta))
     sleep(3)
-    print ("""
+    print("""
 Tecleea:
 Si / para realizar la misma operacion
 NO / para realizar otra operacion diferente
     """)
     opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
-    if (opci=="si"):
+    if (opci == "si"):
         Sen()
-    elif(opci=="no" or opci!="si"):
+    elif (opci == "no" or opci != "si"):
         repeat()
 
 
-os.system("cls")  # limpia la consola
 def Calculadora():
     """Funcion Para Calcular Operaciones Aritmeticas"""
     while True:
@@ -173,7 +176,7 @@ def Calculadora():
         opc = input("Ingresa el numero de la operacion deseada: ")
         try:
             opc = int(opc)
-            while (opc > 0 and opc <=8):
+            while (opc > 0 and opc <= 8):
                 if (opc > 0 and opc <= 8):
                     if (opc == 1):
                         Suma()
@@ -189,7 +192,7 @@ def Calculadora():
                         Exponente()
                     elif (opc == 7):
                         Sen()
-                    elif (opc>= 8):
+                    elif (opc >= 8):
                         print("""
                         
 Adios, gracias por usar mi calculadora
@@ -197,9 +200,10 @@ Adios, gracias por usar mi calculadora
 """)
                         quit()
         except ValueError:
-            print ("La entrada es incorrecta: escribe un numero entero")
+            print("La entrada es incorrecta: escribe un numero entero")
             sleep(3)
             repeat()
+
 
 def repeat():
     try:
@@ -207,6 +211,8 @@ def repeat():
             os.system("cls")  # limpia la consola
             Calculadora()
     except KeyboardInterrupt:
-            os.system("cls")  # limpia la consola
-            repeat()
+        os.system("cls")  # limpia la consola
+        repeat()
+
+
 repeat()
