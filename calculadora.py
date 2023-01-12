@@ -5,8 +5,8 @@ import math
 
 
 def Suma():
-    x = int(input("Ingrese el primer numero a sumar\n"))
-    y = int(input("Ingrese el segundo numero a sumar\n"))
+    x = int(input("Ingrese el primer número a sumar\n"))
+    y = int(input("Ingrese el segundo número a sumar\n"))
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.add(arr1, arr2)
@@ -16,10 +16,10 @@ def Suma():
     print("""
     
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Suma()
     elif (opci == "no" or opci != "si"):
@@ -27,8 +27,8 @@ NO / para realizar otra operacion diferente
 
 
 def Resta():
-    x = int(input("Ingrese el primer numero\n"))
-    y = int(input("Ingrese el segundo numero\n"))
+    x = int(input("Ingrese el primer número\n"))
+    y = int(input("Ingrese el segundo número\n"))
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.subtract(arr1, arr2)
@@ -37,10 +37,10 @@ def Resta():
     sleep(3)
     print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Resta()
     elif (opci == "no" or opci != "si"):
@@ -48,8 +48,8 @@ NO / para realizar otra operacion diferente
 
 
 def Multiplicacion():
-    x = int(input("Ingrese el primer numero\n"))
-    y = int(input("Ingrese el segundo numero\n"))
+    x = int(input("Ingrese el primer número\n"))
+    y = int(input("Ingrese el segundo número\n"))
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.multiply(arr1, arr2)
@@ -58,10 +58,10 @@ def Multiplicacion():
     sleep(3)
     print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Multiplicacion()
     elif (opci == "no" or opci != "si"):
@@ -69,17 +69,17 @@ NO / para realizar otra operacion diferente
 
 
 def Division():
-    x = int(input("Ingrese el primer numero\n"))
-    y = int(input("Ingrese el segundo numero\n"))
+    x = int(input("Ingrese el primer número\n"))
+    y = int(input("Ingrese el segundo número\n"))
     try:
         myorder = "La División de {0} / {1} es: {2}"
         print(myorder.format(x, y, x/y))
         print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
         """)
-        opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+        opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
         if (opci == "si"):
             Division()
         elif (opci == "no" or opci != "si"):
@@ -89,10 +89,10 @@ NO / para realizar otra operacion diferente
         sleep(3)
         print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
         """)
-        opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+        opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
         if (opci == "si"):
             Division()
         elif (opci == "no" or opci != "si"):
@@ -100,7 +100,7 @@ NO / para realizar otra operacion diferente
 
 
 def Raiz():
-    x = int(input("Ingrese Numero al que desea calular su raiz\n"))
+    x = int(input("Ingrese número al que desea calular su raiz\n"))
     y = int(input("Ingrese el indice de la raiz\n"))
     myorder = "{1}√{0} es: {2}"
     result = pow(x, 1/y)
@@ -108,10 +108,10 @@ def Raiz():
     sleep(3)
     print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Raiz()
     elif (opci == "no" or opci != "si"):
@@ -119,8 +119,8 @@ NO / para realizar otra operacion diferente
 
 
 def Exponente():
-    x = int(input("Ingrese Numero\n"))
-    y = int(input("Ingrese Otro Numero\n"))
+    x = int(input("Ingrese número\n"))
+    y = int(input("Ingrese la potencia a elevar el numero anterior\n"))
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.power(arr1, arr2)
@@ -129,10 +129,10 @@ def Exponente():
     sleep(3)
     print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Exponente()
     elif (opci == "no" or opci != "si"):
@@ -140,17 +140,17 @@ NO / para realizar otra operacion diferente
 
 
 def Sen():
-    x = int(input("Ingrese Numero\n"))
+    x = int(input("Ingrese número\n"))
     respuesta = math.sin(x)
     myorder = "El seno de {0} es: {1}"
     print(myorder.format(x, respuesta))
     sleep(3)
     print("""
 Tecleea:
-Si / para realizar la misma operacion
-NO / para realizar otra operacion diferente
+Si / para realizar la misma operación
+NO / para realizar otra operación diferente
     """)
-    opci = str(input("¿Desea realizar de nuevo la operacion?\n").lower())
+    opci = str(input("¿Desea realizar de nuevo la operación?\n").lower())
     if (opci == "si"):
         Sen()
     elif (opci == "no" or opci != "si"):
@@ -158,12 +158,12 @@ NO / para realizar otra operacion diferente
 
 
 def Calculadora():
-    """Funcion Para Calcular Operaciones Aritmeticas"""
+    """Funcion Para Calcular operaciónes Aritmeticas"""
     while True:
         print('************')
         print('Calculadora')
         print('************')
-        print('Seleccione una operacion a realizar')
+        print('Seleccione una operación a realizar')
         print('Menu')
         print('1) Suma')
         print('2) Resta')
@@ -173,7 +173,7 @@ def Calculadora():
         print('6) Exponente')
         print('7) Seno')
         print('8) Apagar o Terminar')
-        opc = input("Ingresa el numero de la operacion deseada: ")
+        opc = input("Ingresa el número de la operación deseada: ")
         try:
             opc = int(opc)
             while (opc > 0 and opc <= 8):
@@ -200,7 +200,7 @@ Adios, gracias por usar mi calculadora
 """)
                         quit()
         except ValueError:
-            print("La entrada es incorrecta: escribe un numero entero")
+            print("La entrada es incorrecta: escribe un número entero")
             sleep(3)
             repeat()
 
