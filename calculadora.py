@@ -200,7 +200,11 @@ Adios, gracias por usar mi calculadora
 """)
                         quit()
         except ValueError:
-            print("La entrada es incorrecta: escribe un número entero")
+            print("""
+            
+La entrada es incorrecta: escribe un número entero
+
+""")
             sleep(3)
             repeat()
 
