@@ -10,8 +10,8 @@ def Suma():
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.add(arr1, arr2)
-    myorder = "La Suma de {0} + {1} es: {2}"
-    print(myorder.format(x, y, respuesta))
+    formatoRespuesta = "La Suma de {0} + {1} es: {2}"
+    print(formatoRespuesta.format(x, y, respuesta))
     sleep(3)
     print("""
     
@@ -32,8 +32,8 @@ def Resta():
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.subtract(arr1, arr2)
-    myorder = "La resta de {0} - {1} es: {2}"
-    print(myorder.format(x, y, respuesta))
+    formatoRespuesta = "La resta de {0} - {1} es: {2}"
+    print(formatoRespuesta.format(x, y, respuesta))
     sleep(3)
     print("""
 Tecleea:
@@ -53,8 +53,8 @@ def Multiplicacion():
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.multiply(arr1, arr2)
-    myorder = "La Multiplicacion de {0} * {1} es: {2}"
-    print(myorder.format(x, y, respuesta))
+    formatoRespuesta = "La Multiplicacion de {0} * {1} es: {2}"
+    print(formatoRespuesta.format(x, y, respuesta))
     sleep(3)
     print("""
 Tecleea:
@@ -72,8 +72,8 @@ def Division():
     x = int(input("Ingrese el primer número\n"))
     y = int(input("Ingrese el segundo número\n"))
     try:
-        myorder = "La División de {0} / {1} es: {2}"
-        print(myorder.format(x, y, x/y))
+        formatoRespuesta = "La División de {0} / {1} es: {2}"
+        print(formatoRespuesta.format(x, y, x/y))
         print("""
 Tecleea:
 Si / para realizar la misma operación
@@ -102,9 +102,9 @@ NO / para realizar otra operación diferente
 def Raiz():
     x = int(input("Ingrese número al que desea calular su raiz\n"))
     y = int(input("Ingrese el indice de la raiz\n"))
-    myorder = "{1}√{0} es: {2}"
+    formatoRespuesta = "{1}√{0} es: {2}"
     result = pow(x, 1/y)
-    print(myorder.format(x, y, result))
+    print(formatoRespuesta.format(x, y, result))
     sleep(3)
     print("""
 Tecleea:
@@ -124,8 +124,8 @@ def Exponente():
     arr1 = np.array([x])
     arr2 = np.array([y])
     respuesta = np.power(arr1, arr2)
-    myorder = "{0} a la {1}.ª es: {2}"
-    print(myorder.format(x, y, respuesta))
+    formatoRespuesta = "{0} a la {1}.ª es: {2}"
+    print(formatoRespuesta.format(x, y, respuesta))
     sleep(3)
     print("""
 Tecleea:
@@ -142,8 +142,8 @@ NO / para realizar otra operación diferente
 def Sen():
     x = int(input("Ingrese número\n"))
     respuesta = math.sin(x)
-    myorder = "El seno de {0} es: {1}"
-    print(myorder.format(x, respuesta))
+    formatoRespuesta = "El seno de {0} es: {1}"
+    print(formatoRespuesta.format(x, respuesta))
     sleep(3)
     print("""
 Tecleea:
